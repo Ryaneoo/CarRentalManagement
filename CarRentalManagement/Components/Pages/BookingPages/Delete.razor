@@ -3,7 +3,7 @@
 @using CarRentalManagement.Components.Domain
 @inject IDbContextFactory<CarRentalManagement.Data.CarRentalManagementContext> DbFactory
 @inject NavigationManager NavigationManager
-
+@attribute [Authorize(Roles="Administrator")]
 <PageTitle>Delete</PageTitle>
 
 <h1>Delete</h1>
